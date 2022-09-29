@@ -6,6 +6,9 @@ body{
 a:visited{
     color: #bcd2cd;
 }
+a:link{
+    color:rgb(150, 185, 225);
+}
 h1{
     font-family: 'Trebuchet MS';
     color:rgb(205, 205, 184);;
