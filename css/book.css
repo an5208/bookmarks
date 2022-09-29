@@ -1,0 +1,169 @@
+/* header - to be reused */
+body{
+    background-color: #c0d3cd;
+}
+h1{
+    font-family: 'Trebuchet MS';
+}
+header{
+    border: groove 2px black;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+.nav_bar ul{
+    list-style-type: none;
+    float:right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav_bar li{
+    border-right: solid 1px black;
+}
+.nav_bar li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 5px 40px;
+    background-color: #73beb0;
+    text-decoration: none;
+    font-family: cursive ;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.nav_bar li a:hover{
+    background-color: #5d838a;
+    color:white;
+}
+#logo img{
+    float:left;
+    width: 140px;
+    padding: 5px 0 5px 5px;
+}
+#header_title{
+    padding-top: 10px;
+    font-size: xx-large;
+}
+#header_slogan{
+    font-size: large;
+}
+/* body - unique */
+
+#breadcrumb1 {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  #breadcrumb1 li {
+    display: inline;
+    font-size: 18px;
+  }
+  #breadcrumb1 li a{
+    text-decoration: none;
+  }
+  
+  /* Add > before/behind each list item */
+  #breadcrumb1 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003e";
+}
+#purchase{
+    display:flex;
+    flex-direction: row;
+}
+#book_img{
+    display: flex;
+    flex-direction: row;
+}
+.big_img{
+    order:1;
+    max-width: 500px;
+    padding: 0 30px 20px 40px;
+    border-radius: 10px;
+}
+#smalls{
+    order: 2;
+    display:flex;
+    flex-direction: column;
+    padding: 0px 20px 0  0;
+}
+.lil_img{
+    max-height: 100px;
+    padding: 0 0 20px 0;
+}
+#price{
+    margin-left:25%;
+    font-family: 'Trebuchet MS';
+    font-size: xx-large;
+}
+#buy_button{
+    background-color: #D5ECD4;
+    border: solid 2px #5d838a;
+    width: 300px;
+    height: 25%;
+    margin-top: 40%;
+    margin-left: 25%;
+    font-family: 'Trebuchet MS';
+    font-size: xx-large;
+    text-align: center;
+    top: 50%;
+}
+#buy_button a{
+    text-decoration: none;
+    margin-top: 10%;
+}
+footer {
+    border: groove 2px black;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    background-image: url("/media/logo_nt.png");
+    background-repeat: repeat-x;
+    background-size:contain;
+}
+#ft_nav{
+    font-family: cursive;
+}
+.nav_bar ul{
+    list-style-type: none;
+}
+#ft_cname{
+    font-size: x-large;
+    background-color: #b1c0bb;
+}
+#ft_corp{
+    font-size: medium;
+    background-color: #b1c0bb;
+    padding-bottom: 5px;
+}
+#ft_nav a:hover{
+    background-color: rgb(90, 241, 90);
+}
+/* responsive: vertical nav bar for mobile */
+@media screen and (min-width:960px){
+}
+
+@media screen and (max-width:960px){
+    .nav_bar ul{
+        flex-direction: column-reverse;
+    }
+    .nav_bar li{
+        float:none;
+    }
+    #book_img{
+        flex-direction: column;
+    }
+    #smalls{
+        flex-direction: row;
+    }
+    #purchase{
+        flex-direction: column;
+    }
+    #buy_button{
+        margin-top: 10%;
+    }
+}

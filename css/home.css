@@ -1,0 +1,121 @@
+/* header - to be reused */
+body{
+    background-color: #2b474e;
+    color: rgb(197, 209, 223);
+}
+a:visited{
+    color: #bcd2cd;
+}
+h1{
+    font-family: 'Trebuchet MS';
+    color:rgb(205, 205, 184);;
+}
+h3{
+    color: rgb(205, 205, 184);
+}
+header{
+    border: groove 2px black;
+    overflow: hidden;
+    background-color: #2C3333;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+.nav_bar ul{
+    list-style-type: none;
+    float:right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav_bar li{
+    border-right: solid 1px black;
+}
+.nav_bar li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 5px 40px;
+    background-color: #73beb0;
+    text-decoration: none;
+    font-family: cursive ;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.nav_bar li a:hover{
+    background-color: #5d838a;
+    color:white;
+}
+#logo img{
+    float:left;
+    width: 140px;
+    padding: 5px 0 5px 5px;
+}
+#header_title{
+    padding-top: 10px;
+    font-size: xx-large;
+}
+#header_slogan{
+    font-size: large;
+}
+/* body - unique */
+
+#cate{
+    display: flex;
+    order:1;
+    flex-direction: row;
+    justify-content: center;
+}
+.home_book{
+    width: 100px;
+    padding: 0 20px 0 20px;
+    border-left: dotted 2px gray;
+    border-right: dotted 2px gray;
+}
+.book_img{
+    height:150px;
+    max-width: 90px;
+}
+h1{
+    text-align: center;
+}
+/* footer - to be reused */
+footer {
+    border: groove 2px black;
+    overflow: hidden;
+    background-color: #2C3333;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    background-image: url("/media/logo_nt.png");
+    background-repeat: repeat-x;
+    background-size:contain;
+}
+#ft_nav{
+    font-family: cursive;
+}
+.nav_bar ul{
+    list-style-type: none;
+}
+#ft_cname{
+    font-size: x-large;
+    background-color: #2C3333;
+}
+#ft_corp{
+    font-size: medium;
+    background-color: #2C3333;
+    padding-bottom: 5px;
+}
+#ft_nav a:hover{
+    background-color: rgb(90, 241, 90);
+}
+/* responsive: vertical nav bar for mobile */
+@media screen and (min-width:960px){
+    
+}
+
+@media screen and (max-width:960px){
+    .nav_bar ul{
+        flex-direction: column-reverse;
+    }
+    .nav_bar li{
+        float:none;
+    }
+}
