@@ -3,11 +3,11 @@ body{
     background-color: #263e44;
     color: rgb(197, 209, 223);
 }
-a:visited{
-    color: #bcd2cd;
-}
-a:link{
+li a{
     color:rgb(150, 185, 225);
+}
+li a:hover{
+    color: #dbefc2;
 }
 h1{
     font-family: 'Trebuchet MS';
@@ -22,6 +22,15 @@ header{
     background-color: #2C3333;
     font-family: 'Trebuchet MS';
     text-align: center;
+}
+#cl_c{
+    background-color: #263e44;
+}
+#cl_li{
+    background-color: #2a5157;
+}
+#cl_bt{
+    color: rgb(197, 209, 223);
 }
 .nav_bar ul{
     list-style-type: none;
@@ -60,7 +69,10 @@ header{
     font-size: large;
 }
 /* body - unique */
-
+#link_sec{
+    padding-left: 2%;
+    padding-right: 4%;
+}
 #cate{
     display: flex;
     order:1;
