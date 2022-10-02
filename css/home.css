@@ -30,7 +30,8 @@ header{
     background-color: #2a5157;
 }
 #cl_bt{
-    color: rgb(197, 209, 223);
+    color: rgb(205, 205, 184);
+    font-size: 18.72px;
 }
 .nav_bar ul{
     list-style-type: none;
