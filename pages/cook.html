@@ -6,16 +6,16 @@
     <link rel="icon" href="../media/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/home.css">
-    <script src="./script.js" async></script>
+    <script src="../script.js" async></script>
     <title>Bookmarks</title>
   </head>
   <body>
     <header>
         <a id="logo" href="index.html">
-            <img src="../media/logo.png" alt="aaa">
+            <img src="../media/favicon.png" alt="aaa">
         </a>
         <div id="header_title">NVA's bookmarks</div>
-        <div id="header_slogan">I'm too lazy to sign up for stuff</div>
+        <div id="header_slogan">This is an excuse to fiddle with Bootstrap</div>
       <nav class="nav_bar">
         <ul class="list-group">
             <li><a href="nerd.html">Nerd stuff</a></li>
@@ -28,6 +28,9 @@
     </header>
 
     <section id="main">
+      <div id="toggler-cook">
+        <button id="toggler-cook" class="toggler">Toggle show/collapse elements</button>
+      </div>
       <div id="accordion">
         <div class="card" id="cl_c">
           <div class="card-header" id="headingOne">
@@ -37,7 +40,7 @@
               </button>
             </h3>
           </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse multi-collapse">
             <div class="card-body">
               <ul class="list-group">
                 <li class="list-group-item" id="cl_li"><a href="https://www.sagedining.com/menus/saintjamesschool?l=1&view=weekly">SJS Sage</a></li>
@@ -56,7 +59,7 @@
               </button>
             </h3>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div id="collapseTwo" class="collapse multi-collapse">
             <div class="card-body">
               <div id="subcat">
                 <h4 id="ck_gumbo">Chicken (and more) gumbo</h4>
@@ -66,33 +69,33 @@
                     <li class="list-group-item" id="cl_li"><a href="https://www.gdseasoning.com/post/chicken-sausage-and-seafood-gumbo-for-the-holidays-step-by-step-cooking-with-carolyn">Carolyn's Gumbo (Text)</a></li>
                 </ul>
               </div><br>
-            <div id="subcat">
-                <h4 id="ck_fried">Fried Chicken</h4>
-                <ul class="list-group">
-                    <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=ElDAcsVTMaI">Karaage - JP Fried Chicken (YT)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.joshuaweissman.com/post/panada-express-orange-chicken-but-better">Panda Express Orange (Fried) Chicken</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=mJ8RMyPOZRQ">General Tso's Fried Chicken (YT)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.thespruceeats.com/korean-chicken-wings-4777759">KR Fried Chicken</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://mykoreankitchen.com/korean-style-popcorn-chicken/">KR Popcorn Chicken (just smaller and sweeter KR fried chicken)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://cooking.nytimes.com/recipes/1012984-chicken-teriyaki">Chicken Teriyaki (NYT - may need adblock)</a></li>
-                </ul>
-            </div><br>
-            <div id="subcat">
-                <h4 id="ck_other">Other chicken dishes</h4>
-                <ul class="list-group">
-                    <li class="list-group-item" id="cl_li"><a href="https://www.thespruceeats.com/portugese-chicken-burger-recipe-256295">Portuguese Bondi Chicken Burger</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.justonecookbook.com/simple-chicken-curry/">Simple chicken curry</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.allrecipes.com/recipe/223042/chicken-parmesan/">Chicken parmesan</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://cooking.nytimes.com/recipes/1020347-huli-huli-chicken">Huli Huli Chicken (Grilled) (NYT - may need adblock)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.food.com/recipe/authentic-chicken-jalfrezi-509814">Chicken Jalfrezi (Indian based)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.koreanbapsang.com/dak-bulgogi-korean-bbq-chicken/">Dak Bulgogi - KR Chicken (includes sauce recipe)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=_U6Eb-PoTNo">Chicken Paprikash - Hungarian Chicken Stew (YT)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=lkdxDx0bfa8">Chicken Sloppy Joes (YT)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://damndelicious.net/2015/05/16/copycat-chick-fil-a-sandwich/">Chick-Fil-A sandwich</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.reddit.com/r/food/comments/odjyox/comment/h4151aq/?context=3">Chick-Fil-A sandwich (Homemade, Rd)</a></li>
-                    <li class="list-group-item" id="cl_li"><a href="https://www.reddit.com/r/food/comments/sv503k/homemade_butter_chicken_w_garlic_butter_naan/">Butter chicken w/ garlic butter naan (Rd)</a></li>
-                </ul>
-            </div>
+              <div id="subcat">
+                  <h4 id="ck_fried">Fried Chicken</h4>
+                  <ul class="list-group">
+                      <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=ElDAcsVTMaI">Karaage - JP Fried Chicken (YT)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.joshuaweissman.com/post/panada-express-orange-chicken-but-better">Panda Express Orange (Fried) Chicken</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=mJ8RMyPOZRQ">General Tso's Fried Chicken (YT)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.thespruceeats.com/korean-chicken-wings-4777759">KR Fried Chicken</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://mykoreankitchen.com/korean-style-popcorn-chicken/">KR Popcorn Chicken (just smaller and sweeter KR fried chicken)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://cooking.nytimes.com/recipes/1012984-chicken-teriyaki">Chicken Teriyaki (NYT - may need adblock)</a></li>
+                  </ul>
+              </div><br>
+              <div id="subcat">
+                  <h4 id="ck_other">Other chicken dishes</h4>
+                  <ul class="list-group">
+                      <li class="list-group-item" id="cl_li"><a href="https://www.thespruceeats.com/portugese-chicken-burger-recipe-256295">Portuguese Bondi Chicken Burger</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.justonecookbook.com/simple-chicken-curry/">Simple chicken curry</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.allrecipes.com/recipe/223042/chicken-parmesan/">Chicken parmesan</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://cooking.nytimes.com/recipes/1020347-huli-huli-chicken">Huli Huli Chicken (Grilled) (NYT - may need adblock)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.food.com/recipe/authentic-chicken-jalfrezi-509814">Chicken Jalfrezi (Indian based)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.koreanbapsang.com/dak-bulgogi-korean-bbq-chicken/">Dak Bulgogi - KR Chicken (includes sauce recipe)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=_U6Eb-PoTNo">Chicken Paprikash - Hungarian Chicken Stew (YT)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=lkdxDx0bfa8">Chicken Sloppy Joes (YT)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://damndelicious.net/2015/05/16/copycat-chick-fil-a-sandwich/">Chick-Fil-A sandwich</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.reddit.com/r/food/comments/odjyox/comment/h4151aq/?context=3">Chick-Fil-A sandwich (Homemade, Rd)</a></li>
+                      <li class="list-group-item" id="cl_li"><a href="https://www.reddit.com/r/food/comments/sv503k/homemade_butter_chicken_w_garlic_butter_naan/">Butter chicken w/ garlic butter naan (Rd)</a></li>
+                  </ul>
+              </div>
           </div>
         </div><br>
 
@@ -104,7 +107,7 @@
               </button>
             </h3>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseThree" class="collapse multi-collapse">
             <div class="card-body">
               <ul class="list-group">
                 <li class="list-group-item" id="cl_li"><a href="https://comngon16.com/cach-lam-nuoc-sot-tieu-den-duom-vi-thom-ngon.new">Sot Tieu Den</a></li>
@@ -123,7 +126,7 @@
             </button>
           </h3>
         </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div id="collapseFour" class="collapse multi-collapse">
           <div class="card-body">
             <ul class="list-group">
               <li class="list-group-item" id="cl_li"><a href="https://www.youtube.com/watch?v=JhkZipJpKOw">Scrambled Egg Omelet (YT)</a></li>
